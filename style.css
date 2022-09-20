@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aliceblue;
+    font-family: 'Bungee Spice', cursive;
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.container h3 {
+    margin: 2rem 0;
+}
+
+#start {
+    border: 0;
+    background-color: lightgreen;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: coral;
+}
+
+#start:hover {
+    background-color: bisque;
+}
+
+.game-container {
+    margin: 5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* sığdıgı kadarını al onun dışındakilerini aşağı al dedim burada  */
+}
+
+.toprak {
+    position: relative;
+    width: 25%;
+    height: 6rem;
+    margin: 3rem 1rem;
+}
+
+.toprak:after {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("./toprak.img1.png") center no-repeat;
+    background-size: cover;
+}
+
+.köstebek {
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background: url("./köstebek.img.png") no-repeat center;
+    background-size: contain;
+    transition: 0.3s ease all;
+}
+
+.köstebek.secilen {
+    top: -2.9rem;
+}
